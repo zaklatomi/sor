@@ -6,12 +6,105 @@
     color: beige;
     font-size: 10pt;
 }
+body{
+    background-image: url(design/teglafal.jpg);
+}
 main{
     width: 80%;
     max-width: 1000px;
     margin: auto;
     background-color: #333333;
+    /* box-shadow: 2px 2px white;
+    box-shadow: -2px -2px white; */
+    box-shadow: -1px 1px 3px 3px rgba(255,255,255,0.75);
 }
 header{
-    
+    background-image: url(design/beer-new_401732638.jpg);
+    height: 300px;
+    background-size: cover;
+    font-weight: bold;
+    font-family: garamond;
+    letter-spacing: 4px;
+    font-size: 32px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+nav ul li{
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: .5rem;
+    padding-block: 5px;
+    padding-left: 2rem;
+    margin-block: 2px;
+
+}
+
+nav ul li:hover{
+    background-color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+a:hover{
+    color: white;
+}
+article{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+article h2{
+    font-size: 15px;
+    padding: 1rem;
+}
+article img{
+    float: left;
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: .5rem;
+}
+.article ul li{
+    list-style-type: square;
+    text-align: justify;
+    /* font-size: 10px;  ez volt a leírásban*/
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 13rem;
+    margin-block: 5px;
+}
+.article{
+    border-right: 1px solid rgba(255,255,255,0.75)   ;
+    border-top: 1px solid rgba(255,255,255,0.75)   ;
+    padding: 1rem;
+}
+nav{
+    padding: 1rem;
+}
+footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: grey;
+}
+@media screen and (max-width:700px) {
+    article{
+        grid-template-columns: 1fr;
+
+    }
+    .article img{
+        float: none;
+    }
+    header{
+        text-shadow: 1px 1px black;
+    }
+    .article ul li{
+        margin-left: 1rem;
+    }
 }
